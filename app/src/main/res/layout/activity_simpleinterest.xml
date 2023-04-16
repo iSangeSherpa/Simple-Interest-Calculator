@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Vertical Container -->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <!-- Horizontal Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/principle"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="0"
+                android:textSize="25sp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/t"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="0"
+                android:textSize="25sp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/r"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/rate"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="0"
+                android:textSize="25sp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingVertical="15dp"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingVertical="15dp"/>
+
+        <TextView
+            android:id="@+id/simple_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

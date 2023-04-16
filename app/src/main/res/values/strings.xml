@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simple Interest</string>
+
+    <string name="p"> Principle: </string>
+    <string name="t"> Time: </string>
+    <string name="r"> Rate: </string>
+    <string name="calculate"> Calculate </string>
+</resources>
